@@ -47,13 +47,21 @@ class Personaje:
         enemigo.vida = enemigo.vida - daño
         print(self.nombre, "Ha realizado", daño, "puntos de daño a", enemigo.nombre)
         print("Vida de", enemigo.nombre, "es", enemigo.vida)
+
+class Guerrero(Personaje):
+    pass
+
+tlatoani = Guerrero("Apocalipto",50,70,30,100)
+
+
+
         
 #Variable del constructor de la clase
-mi_personaje = Personaje("Dante",1000, 3,70,100)
-mi_personaje.imprimir_atributos()
-mi_enemigo = Personaje("Vergil",70,30,70,100)
-mi_personaje.atacar(mi_enemigo)
-mi_enemigo.imprimir_atributos()
+# mi_personaje = Personaje("Dante",1000, 3,70,100)
+# mi_personaje.imprimir_atributos()
+# mi_enemigo = Personaje("Vergil",70,30,70,100)
+# mi_personaje.atacar(mi_enemigo)
+# mi_enemigo.imprimir_atributos()
 
 
 #print(mi_personaje.dañar(mi_enemigo))
